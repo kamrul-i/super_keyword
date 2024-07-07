@@ -6,15 +6,13 @@ public class Jeep extends Vechicle {
     int whole;
 
     Jeep(String c, double w, int b) {
-        color = c;  //এই error পরবর্তী commit-এ সমাধান হবে।।
-        weight = w;
+        super(c,w);
         whole = b;
     }
 
     @Override
     void attribute() {
-        System.out.println("Jeep's color  : " + color);
-        System.out.println("Jeep's weight : " + weight + " kg");
+        super.attribute();
         System.out.println("Jeep's whole  : " + whole);
     }
 
